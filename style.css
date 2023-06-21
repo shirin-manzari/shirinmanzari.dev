@@ -303,5 +303,19 @@ body {
     }
   }
  
+  footer {
 
+}
 
+footer .ul {
+    list-style: none;
+}
+footer .li {
+    float: right;
+}
+footer .li a {
+    display: block;
+    color: #fff;
+    text-align: center;
+    text-decoration: none;
+}
