@@ -52,6 +52,15 @@ body {
     background-color: #7f6ed2;
     color: #1b1b1b;
   }
+
+.container {
+    display: grid;
+    grid-template-columns: 1fr 7fr 1fr;
+    grid-template-rows: 1fr 5fr 2fr 1fr;
+    grid-gap: 2px;
+}
+
+
   nav {
     width: 100%;
     background-color: #0b0b0b;
@@ -172,6 +181,10 @@ body {
     margin: 0 auto;
     overflow: hidden;
     padding-bottom: 10px;
+    grid-column-start: 2;
+    grid-column-end: 2;
+    grid-row-start: 2;
+    grid-row-end: 3 ;
   }
   section .title span {
     display: inline-block;
@@ -205,7 +218,11 @@ body {
     width: 0;
     animation: linkAfter 0.5s 1s ease both;
   }
-  
+  section footer {
+    grid-column-start: 2;
+    grid-row-start: 3;
+    grid-row-end: 4;
+  }
   @-moz-keyframes pop {
     0% {
       transform: translateY(100%);
@@ -307,15 +324,28 @@ body {
 
 }
 
-footer .ul {
+footer ul {
     list-style: none;
 }
-footer .li {
-    float: right;
+footer li {
+    float: left;
+    margin: 1rem;
+    padding: 0.5rem;
 }
-footer .li a {
-    display: block;
-    color: #fff;
+footer li a {
     text-align: center;
     text-decoration: none;
+    display: inline-block;
+    font-size: 0.7vw;
+    color: #efefef;
+    width: 100%;
+    text-transform: uppercase;
+    transform: translateX(-100%);
+    animation: byBottom 1s ease both;
+    font-weight: 400;
+    letter-spacing: 0.20vw;
+}
+footer li a:hover {
+    color: #7f6ed2;
+    transition: 0.4ss;
 }
