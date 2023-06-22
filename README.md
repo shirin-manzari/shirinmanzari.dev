@@ -1,2 +1,2 @@
-# shirinmanzari.dev
-Personal website
+# Personal website
+Hey 👋, this is my Personal website/Portfolio.
